@@ -154,7 +154,10 @@ body {
   box-shadow: rgba(0, 0, 0, 0.8) 2px 2px 2px inset, rgba(0, 0, 0, 0.8) -2px -1.4px 2px inset;
 
 }
+html {
+		zoom: 0.7;
 
+	}
 
 @media screen and (max-width: 420px) {
 	html {
