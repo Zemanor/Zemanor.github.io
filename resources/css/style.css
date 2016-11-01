@@ -1,5 +1,6 @@
 
 /*Mobile first layout*/
+
 .row {display: flex; flex-direction: column;} 
 
 .col {
@@ -153,4 +154,14 @@ body {
   box-shadow: rgba(0, 0, 0, 0.8) 2px 2px 2px inset, rgba(0, 0, 0, 0.8) -2px -1.4px 2px inset;
 
 }
+
+
+@media screen and (max-width: 420px) {
+	html {
+		zoom: 0.7;
+
+	}
+
+}
+
 
