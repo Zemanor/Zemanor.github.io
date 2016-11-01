@@ -155,7 +155,7 @@ body {
 
 }
 html {
-		zoom: 0.7;
+		zoom: 0.7 !important;
 
 	}
 
