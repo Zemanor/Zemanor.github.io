@@ -124,3 +124,33 @@ body {
 .hide {
 	display: none;
 }
+.tweetLabel {
+	float: right;
+	color: #fff;
+	padding-top: 1px;
+	padding-right: -1em;
+	margin-right: -1.35em;
+}
+.tweetIcon {
+	float: right;
+	color: #fff;
+	padding-left: 2em;
+	display: inline;
+	margin-right: 1em;
+}
+.clr {
+	color: white;
+	font-family: 'Pacifico', cursive; 
+
+}
+.clr:hover {
+	transform: scale(1.15);
+	-webkit-transition: transform 0.05s ease-in-out;
+}
+.quote-container-col {
+	 -moz-box-shadow: rgba(0, 0, 0, 0.8) 5px 5px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 5px 5px 55px inset;
+  box-shadow: rgba(0, 0, 0, 0.8) 2px 2px 2px inset, rgba(0, 0, 0, 0.8) -2px -1.4px 2px inset;
+
+}
+
