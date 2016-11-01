@@ -1,1 +1,126 @@
 
+/*Mobile first layout*/
+.row {display: flex; flex-direction: column;} 
+
+.col {
+	flex: 1;
+	margin: 0.6em; /*important*/
+  padding: 0.6em;
+ }
+
+	@media screen and (min-width: 500px) {
+  	.row {display: flex; flex-direction: row;}
+	}
+
+
+body {
+	background-color: #5bc0ea;
+	/*#85ddd7 */
+	/*#22969d og color blue*/
+	font-family: 'Pacifico', cursive;
+	color: #fff;
+}
+.title {
+	text-align: center;
+	font-size: 2.7em;
+	padding-top: 0.35em;
+	padding-bottom: 0.45em;
+}
+.quote-container {
+	padding: 0.2em;
+	background-color: #000;
+	/*#333344 lighter shade of black for the TV border*/
+	float: center;
+	height: 15em;
+	width: 25em;
+	margin: 0 auto;
+	border-radius: 10px;
+	position: relative;
+	padding-bottom: 1.4em;
+	box-shadow: 0 8px 6px -6px hsla(0, 0%, 0%, 1);
+
+
+}
+.quoteBox {
+	margin-top: -0.6em;
+}
+.iconCtn {
+	position: absolute;
+    bottom: 0;
+    padding-bottom: 2px;
+}
+/*#43DDAA*/
+.quote-container-col {
+	text-align: center;
+	background-color: #FD3C5A;
+	position: relative;
+}
+
+.controller {
+	width: 100px;
+	height: 90px;
+	 display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+
+}
+.controller:hover {
+
+}
+#controllerImg {
+	width: 100px;
+	height: 100px;
+	outline: none;
+
+}
+#controllerImg:hover {
+	transform: scale(1.1);
+	-webkit-transition: transform 0.05s ease-in-out;
+}
+.tvHeading {
+	text-decoration:underline;
+}
+.quoteBox {
+	padding: 1.5em;
+	height: 80%;
+	font-family: 'Shrikhand', cursive;
+	color: #fff;
+	font-size: 1.2em;
+}
+.brightness-icon {
+	float: right;
+	color: #fff;
+	padding-top: 1px;
+	padding-left: 2em;
+	padding-bottom: 5px;
+}
+.brightness-icon:hover {
+	color: #fede3b;
+}
+.bgYellow {
+	background-color: #FFDA80;
+}
+.greenLtrs {
+	color: #27e833;
+
+}
+.darkenBg {
+	color: #333344;
+
+}
+.bgBlue {
+	background-color: #224499;
+	-webkit-transition: background-color 0.4s ease;
+    -moz-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
+    transition: background-color 1.4s ease;
+}
+.psController{
+	content:url("http://pichoster.net/images/2016/10/30/gamepad.png");
+}
+.n64Controller{
+	content:url("http://pichoster.net/images/2016/10/29/game-controller.png") !important;
+}
+.hide {
+	display: none;
+}
