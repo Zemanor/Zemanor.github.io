@@ -15,56 +15,7 @@ function getNum() {
     return randomNum(quoteArray.length);
 }
 
-//check4mobile
-if (isMobile()) {
 
-  $(document).ready(function() {
-    $("#controllerImg").on("tap", function(e) {
-        e.preventDefault();
-        $(".controller").addClass('animated');
-        $(".controller").addClass('wobble');
-        setTimeout(function() {
-            $('.controller').removeClass('animated');
-            $(".controller").removeClass('wobble');
-        }, 1000);
-
-        let idx = getNum();
-        let quoteAt = quoteArray[idx];
-        let authorAt = authorArray[idx];
-        $(".quoteBox").html("<p>" + quoteAt + '<br>' + '<br>' + "-" + authorAt.fontsize(2) + "</p>");
-    })
-});
-
-}  
-else { 
-
-    $(document).ready(function() {
-    $("#controllerImg").click(function(e) {
-        e.preventDefault();
-        $(".controller").addClass('animated');
-        $(".controller").addClass('wobble');
-        setTimeout(function() {
-            $('.controller').removeClass('animated');
-            $(".controller").removeClass('wobble');
-        }, 1000);
-
-        let idx = getNum();
-        let quoteAt = quoteArray[idx];
-        let authorAt = authorArray[idx];
-        $(".quoteBox").html("<p>" + quoteAt + '<br>' + '<br>' + "-" + authorAt.fontsize(2) + "</p>");
-    })
-});
-  
-}
-
-function isMobile() { 
-  if (typeof window.orientation !== 'undefined') { 
-    return true;         
-  }         
-  else {             
-    return false;         
-  }     
-}
 
 
 
