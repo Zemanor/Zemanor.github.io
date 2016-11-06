@@ -1,63 +1,57 @@
-<!doctype html>
 
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
 
-    <title>Quote Machine</title>
-    <meta name="description" content="Quote Machine">
+    <title>WikiViewer</title>
+    <meta name="description" content="WikiViewer">
     <meta name="author" content="Greg Small">
 
     <link rel="stylesheet" href="resources/css/reset.css">
     <link rel="stylesheet" href="resources/css/style.css?20161008613">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Pacifico" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
-    <link rel="stylesheet" href="resources/css/font-awesome.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
     <script src="resources/js/scripts.js"></script>
 
 </head>
 
-<body class="body">
+<body>
     <!-- body content here -->
-  
-    <h1 class="title">Quotable</h1>
 
 
-    <div class="row quote-container">
-        <div class="col quote-container-col">
-            <p class="tvHeading">quote it</p>
+    <div class="row boxContain">
 
-                 <p class="quoteBox">"I am as bad as the worst, but, thank God, I am as good as the best. " </p>
+        <div class="col main-inner">
+            <h1 class="title bgBlue shadow">Wiki Viewer</h1>
 
-            <div class="iconCtn2">
-                 <i class="tweetIcon clr fa fa-twitter" aria-hidden="true"><span class="clr">Share</span></i>
-             </div>
-            
-        </div>
-            <div class="iconCtn">
-                 <i class="brightness-icon fa fa-power-off" aria-hidden="true"></i>
-             </div>
-    </div>
+            <!--search box-->
+            <div class="col col2">
+                <div class="box">
+                    <form method="get" action="/search" id="searchbox5">
+                        <input id="search" name="q" type="text" size="40" placeholder="Search..." />
+                    </form>
 
+                    <ol class="list"> </ol>
 
-    <div class="row">
-        <div class="col">
+                    <div class="col footerItems">
+                        <a href="http://en.wikipedia.org/wiki/Special:Randompage" target="_blank" class="button">Random</a>
+                        <!--<h1>No Results Found</h1>-->
+                        <p class="author textCenter textWhite openSans">By <a href="http://codepen.io/Zemanor/full/VKgjvV/" target="_blank">Greg Small</a>
+                        </p>
+                    </div>
 
-            <span class="controller">
-                 <img id="controllerImg" class="psController"/>
-            </span>
+                </div>
 
-            <div class="quote">
             </div>
 
 
-        </div>
-    </div>
 
 </body>
 
